@@ -13,6 +13,7 @@
 		B49C7BE52AD3877200A1C148 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B49C7BE32AD3877200A1C148 /* Main.storyboard */; };
 		B49C7BE72AD3877300A1C148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49C7BE62AD3877300A1C148 /* Assets.xcassets */; };
 		B49C7BEA2AD3877300A1C148 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B49C7BE82AD3877300A1C148 /* LaunchScreen.storyboard */; };
+		B49C7BF52AD3880B00A1C148 /* RecordWhistleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49C7BF42AD3880B00A1C148 /* RecordWhistleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B49C7BE62AD3877300A1C148 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B49C7BE92AD3877300A1C148 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B49C7BEB2AD3877300A1C148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B49C7BF42AD3880B00A1C148 /* RecordWhistleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordWhistleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		B49C7BDC2AD3877200A1C148 /* Audio_Video_Project33 */ = {
 			isa = PBXGroup;
 			children = (
-				B49C7BDD2AD3877200A1C148 /* AppDelegate.swift */,
-				B49C7BDF2AD3877200A1C148 /* SceneDelegate.swift */,
-				B49C7BE12AD3877200A1C148 /* ViewController.swift */,
-				B49C7BE32AD3877200A1C148 /* Main.storyboard */,
+				B49C7BF12AD3877D00A1C148 /* delegates */,
+				B49C7BF22AD3878700A1C148 /* controllers */,
+				B49C7BF32AD3879700A1C148 /* storyboards */,
 				B49C7BE62AD3877300A1C148 /* Assets.xcassets */,
-				B49C7BE82AD3877300A1C148 /* LaunchScreen.storyboard */,
 				B49C7BEB2AD3877300A1C148 /* Info.plist */,
 			);
 			path = Audio_Video_Project33;
+			sourceTree = "<group>";
+		};
+		B49C7BF12AD3877D00A1C148 /* delegates */ = {
+			isa = PBXGroup;
+			children = (
+				B49C7BDD2AD3877200A1C148 /* AppDelegate.swift */,
+				B49C7BDF2AD3877200A1C148 /* SceneDelegate.swift */,
+			);
+			path = delegates;
+			sourceTree = "<group>";
+		};
+		B49C7BF22AD3878700A1C148 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B49C7BE12AD3877200A1C148 /* ViewController.swift */,
+				B49C7BF42AD3880B00A1C148 /* RecordWhistleViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		B49C7BF32AD3879700A1C148 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B49C7BE32AD3877200A1C148 /* Main.storyboard */,
+				B49C7BE82AD3877300A1C148 /* LaunchScreen.storyboard */,
+			);
+			path = storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +167,7 @@
 			files = (
 				B49C7BE22AD3877200A1C148 /* ViewController.swift in Sources */,
 				B49C7BDE2AD3877200A1C148 /* AppDelegate.swift in Sources */,
+				B49C7BF52AD3880B00A1C148 /* RecordWhistleViewController.swift in Sources */,
 				B49C7BE02AD3877200A1C148 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

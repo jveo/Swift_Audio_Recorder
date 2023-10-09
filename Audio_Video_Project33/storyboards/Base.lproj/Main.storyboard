@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qvx-px-0Fg">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Audio_Video_Project33" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dUE-Va-eLv"/>
+                    <connections>
+                        <segue destination="Qiq-kb-w6v" kind="show" id="t4s-gY-7Qx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="979.38931297709917" y="-27.464788732394368"/>
+        </scene>
+        <!--Record Whistle View Controller-->
+        <scene sceneID="35o-F2-LkR">
+            <objects>
+                <viewController id="Qiq-kb-w6v" customClass="RecordWhistleViewController" customModule="Audio_Video_Project33" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nXt-Nf-0RQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xix-Mj-NJr">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QLi-R6-vDS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xix-Mj-NJr" firstAttribute="top" secondItem="QLi-R6-vDS" secondAttribute="top" id="0oD-mD-WYR"/>
+                            <constraint firstItem="QLi-R6-vDS" firstAttribute="trailing" secondItem="Xix-Mj-NJr" secondAttribute="trailing" id="9UQ-Qq-kTL"/>
+                            <constraint firstItem="Xix-Mj-NJr" firstAttribute="leading" secondItem="QLi-R6-vDS" secondAttribute="leading" id="lXe-G1-0IZ"/>
+                            <constraint firstItem="QLi-R6-vDS" firstAttribute="bottom" secondItem="Xix-Mj-NJr" secondAttribute="bottom" id="x9x-PE-3QA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SCn-BO-2zF"/>
+                    <connections>
+                        <outlet property="stackView" destination="Xix-Mj-NJr" id="Xxo-di-25Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="04Y-DX-CKh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1781" y="-28"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Mm0-m6-JOp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qvx-px-0Fg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2PS-MX-B1h">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1Z4-Yn-Wdu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sDj-85-vaz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
