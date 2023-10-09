@@ -20,12 +20,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="dUE-Va-eLv"/>
                     <connections>
-                        <segue destination="Qiq-kb-w6v" kind="show" id="t4s-gY-7Qx"/>
+                        <segue destination="Qiq-kb-w6v" kind="show" identifier="recordWhistleSeg" id="t4s-gY-7Qx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="979.38931297709917" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="894" y="-28"/>
         </scene>
         <!--Record Whistle View Controller-->
         <scene sceneID="35o-F2-LkR">
@@ -35,22 +35,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xix-Mj-NJr">
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xix-Mj-NJr">
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QLi-R6-vDS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Xix-Mj-NJr" firstAttribute="top" secondItem="QLi-R6-vDS" secondAttribute="top" id="0oD-mD-WYR"/>
-                            <constraint firstItem="QLi-R6-vDS" firstAttribute="trailing" secondItem="Xix-Mj-NJr" secondAttribute="trailing" id="9UQ-Qq-kTL"/>
-                            <constraint firstItem="Xix-Mj-NJr" firstAttribute="leading" secondItem="QLi-R6-vDS" secondAttribute="leading" id="lXe-G1-0IZ"/>
-                            <constraint firstItem="QLi-R6-vDS" firstAttribute="bottom" secondItem="Xix-Mj-NJr" secondAttribute="bottom" id="x9x-PE-3QA"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SCn-BO-2zF"/>
                     <connections>
-                        <outlet property="stackView" destination="Xix-Mj-NJr" id="Xxo-di-25Z"/>
+                        <outlet property="stackView" destination="Xix-Mj-NJr" id="xis-SZ-5qa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="04Y-DX-CKh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
