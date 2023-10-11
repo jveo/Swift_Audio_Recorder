@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    static var isDirty = true
+    
     //MARK: viewDidLoad function
     override func viewDidLoad() {
         super.viewDidLoad()
